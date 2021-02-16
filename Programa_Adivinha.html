@@ -1,1 +1,38 @@
+<meta charset='UTF-8'>
 
+<input/>
+
+<button> Validar chute </button> 
+
+
+<script>
+
+var input = document.querySelector("input"); 
+
+input.focus();
+
+var segredo1 = Math.round (Math.random () * 10 );
+var segredo2 = [1,4,5] ;  
+
+function  verifica() {
+
+if (segredo == input.value)   {
+
+	alert(" Você acertou, parabéns ");
+
+} 	else  {
+
+	alert(" Você errou :( "); 
+	input.value=""
+	input.focus(); 
+} 
+
+}
+	
+	var button = document.querySelector("button") ;
+
+	button.onclick = verifica ; 
+
+
+
+	</script>
